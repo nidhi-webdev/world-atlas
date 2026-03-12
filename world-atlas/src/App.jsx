@@ -3,6 +3,7 @@ import { Home } from "./pages/Home"
 import { About } from "./pages/About"
 import { Contact } from "./pages/Contact"
 import { Country } from "./pages/Country"
+import { AppLayout } from "./components/appLayout/AppLayout"
 
 const router = createBrowserRouter([
   {
