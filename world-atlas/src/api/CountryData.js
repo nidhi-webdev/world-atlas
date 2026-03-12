@@ -1,4 +1,4 @@
-[
+export const countryData = [
   {
     "id": 1,
     "countryname": "Germany",
