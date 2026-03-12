@@ -1,72 +1,72 @@
 export const countryData = [
-  {
-    "id": 1,
-    "countryname": "Germany",
-    "capital": "Berlin",
-    "population": "84 million",
-    "interestingfacts": "Germany has over 20,000 castles and is known for Oktoberfest."
-  },
-  {
-    "id": 2,
-    "countryname": "France",
-    "capital": "Paris",
-    "population": "67 million",
-    "interestingfacts": "France is the most visited country in the world."
-  },
-  {
-    "id": 3,
-    "countryname": "Italy",
-    "capital": "Rome",
-    "population": "59 million",
-    "interestingfacts": "Italy has the most UNESCO World Heritage Sites."
-  },
-  {
-    "id": 4,
-    "countryname": "Japan",
-    "capital": "Tokyo",
-    "population": "125 million",
-    "interestingfacts": "Japan has more than 6,800 islands."
-  },
-  {
-    "id": 5,
-    "countryname": "India",
-    "capital": "New Delhi",
-    "population": "1.43 billion",
-    "interestingfacts": "India is the world's largest democracy."
-  },
-  {
-    "id": 6,
-    "countryname": "United States",
-    "capital": "Washington, D.C.",
-    "population": "331 million",
-    "interestingfacts": "The United States has the world's largest economy."
-  },
-  {
-    "id": 7,
-    "countryname": "Brazil",
-    "capital": "Brasília",
-    "population": "215 million",
-    "interestingfacts": "Brazil is home to the Amazon Rainforest."
-  },
-  {
-    "id": 8,
-    "countryname": "Canada",
-    "capital": "Ottawa",
-    "population": "40 million",
-    "interestingfacts": "Canada has the longest coastline in the world."
-  },
-  {
-    "id": 9,
-    "countryname": "Australia",
-    "capital": "Canberra",
-    "population": "26 million",
-    "interestingfacts": "Australia is both a country and a continent."
-  },
-  {
-    "id": 10,
-    "countryname": "Egypt",
-    "capital": "Cairo",
-    "population": "111 million",
-    "interestingfacts": "Egypt is famous for the ancient pyramids and the Nile River."
-  }
+    {
+        "id": 1,
+        "countryname": "Germany",
+        "capital": "Berlin",
+        "population": "84 million",
+        "interestingfacts": "Germany has over 20,000 castles and is known for Oktoberfest."
+    },
+    {
+        "id": 2,
+        "countryname": "France",
+        "capital": "Paris",
+        "population": "67 million",
+        "interestingfacts": "France is the most visited country in the world."
+    },
+    {
+        "id": 3,
+        "countryname": "Italy",
+        "capital": "Rome",
+        "population": "59 million",
+        "interestingfacts": "Italy has the most UNESCO World Heritage Sites."
+    },
+    {
+        "id": 4,
+        "countryname": "Japan",
+        "capital": "Tokyo",
+        "population": "125 million",
+        "interestingfacts": "Japan has more than 6,800 islands."
+    },
+    {
+        "id": 5,
+        "countryname": "India",
+        "capital": "New Delhi",
+        "population": "1.43 billion",
+        "interestingfacts": "India is the world's largest democracy."
+    },
+    {
+        "id": 6,
+        "countryname": "United States",
+        "capital": "Washington, D.C.",
+        "population": "331 million",
+        "interestingfacts": "The United States has the world's largest economy."
+    },
+    {
+        "id": 7,
+        "countryname": "Brazil",
+        "capital": "Brasília",
+        "population": "215 million",
+        "interestingfacts": "Brazil is home to the Amazon Rainforest."
+    },
+    {
+        "id": 8,
+        "countryname": "Canada",
+        "capital": "Ottawa",
+        "population": "40 million",
+        "interestingfacts": "Canada has the longest coastline in the world."
+    },
+    {
+        "id": 9,
+        "countryname": "Australia",
+        "capital": "Canberra",
+        "population": "26 million",
+        "interestingfacts": "Australia is both a country and a continent."
+    },
+    {
+        "id": 10,
+        "countryname": "Egypt",
+        "capital": "Cairo",
+        "population": "111 million",
+        "interestingfacts": "Egypt is famous for the ancient pyramids and the Nile River."
+    }
 ]
