@@ -1,4 +1,10 @@
 export const Contact = () => {
+const handleFormSubmit = (formData) => {
+    console.log("formData", formData.entries());
+    
+
+}
+
     return (
         <div className="min-h-screen flex items-center justify-center px-4 py-16 bg-[linear-gradient(71deg,#080509,#1a171c,#080509)]">
 
@@ -8,7 +14,8 @@ export const Contact = () => {
                 <h2 className="font-extrabold text-4xl text-white text-center mb-2"> Contact Us </h2>
                 <p className="text-gray-400 text-center mb-8"> We'd love to hear from you. Send us a message! </p>
 
-                <form className="flex flex-col gap-5">
+                <form action={handleFormSubmit}
+                className="flex flex-col gap-5">
 
                     {/* Name */}
                     <div className="flex flex-col gap-1">
