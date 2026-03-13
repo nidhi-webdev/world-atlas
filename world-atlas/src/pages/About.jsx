@@ -8,11 +8,11 @@ export const About = () => {
             {countryData.map((country) => {
                 const { id, countryname, capital, population, interestingfacts } = country
                 return <>
-                    <div className="flex bg-gray-700 rounded-xl p-6 flex-col gap-3 shadow-lg hover:scale-105 transition-transform duration-300 cursor-pointer " key={id}>
+                    <div className="flex bg-gray-900 rounded-xl p-6 flex-col gap-3 shadow-lg hover:scale-105 transition-transform duration-300 cursor-pointer " key={id}>
                         <h3 className="font-extrabold text-xl text-white border-b border-gray-500 pb-2">{countryname} </h3>
-                        <p className="text-white font-semibold"><span> Capital: {capital} </span></p>
-                        <p className="text-white font-semibold"><span> Population: {population} </span></p>
-                        <p className="text-white font-semibold"><span> Interesting Facts: {interestingfacts} </span></p>
+                        <p className="text-gray-400 font-semibold"><span> Capital: {capital} </span></p>
+                        <p className="text-gray-400 font-semibold"><span> Population: {population} </span></p>
+                        <p className="text-gray-400 font-semibold"><span> Interesting Facts: {interestingfacts} </span></p>
                     </div>
 
                 </>
