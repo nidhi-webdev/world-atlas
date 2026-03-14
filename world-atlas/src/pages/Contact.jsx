@@ -1,8 +1,9 @@
+// No need to make useState here 
+
 export const Contact = () => {
     const handleFormSubmit = (formData) => {
-        console.log("formData", formData.entries());
-
-
+        const formInputData = Object.fromEntries(formData.entries())
+        console.log("formInputData", formInputData);
     }
 
     return (
