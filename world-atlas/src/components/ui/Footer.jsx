@@ -7,21 +7,53 @@ import { TbMailPlus } from "react-icons/tb";
 export const Footer = () => {
 
     const footerIcon = {
-        MdPlace : <MdPlace />,
+        MdPlace: <MdPlace />,
         IoCallSharp: <IoCallSharp />,
         TbMailPlus: <TbMailPlus />
     }
 
-    console.log("footerData", footerData);
+    return (
+        <footer className="bg-gray-900 border-t border-gray-700 mt-auto">
+            <div className="max-w-6xl mx-auto px-10 py-12">
 
-    return <footer>
-        {footerData.map((curData, index) => {
-            const { icon, title, details } = curData
-            return <div key={index}>
-                <p> {footerIcon[icon]} </p>
-                <p> {title} </p>
-                <p> {details} </p>
+                {/* Top Section */}
+                <div className="flex flex-col md:flex-row justify-between items-start gap-10">
+
+                    {/* Brand */}
+                    <div className="flex flex-col gap-3 max-w-xs">
+                        <h2 className="text-white font-extrabold text-2xl">🌍 WorldAtlas</h2>
+                        <p className="text-gray-400 text-sm leading-relaxed">
+                            Explore the world, one country at a time. Discover history, culture, and facts about every nation.
+                        </p>
+                    </div>
+
+                    {/* Contact Info */}
+                    <div className="flex flex-col md:flex-row gap-8">
+                        {footerData.map((curData, index) => {
+                            const { icon, title, details } = curData
+                            return (
+                                <div key={index} className="flex items-start gap-3">
+                                    <span className="text-blue-400 text-2xl mt-1">
+                                        {footerIcon[icon]}
+                                    </span>
+                                    <div>
+                                        <p className="text-white font-semibold text-sm">{title}</p>
+                                        <p className="text-gray-400 text-sm">{details}</p>
+                                    </div>
+                                </div>
+                            )
+                        })}
+                    </div>
+                </div>
+
+                {/* Divider */}
+                <div className="border-t border-gray-700 mt-10 pt-6 text-center">
+                    <p className="text-gray-500 text-sm">
+                        © {new Date().getFullYear()} WorldAtlas. All rights reserved.
+                    </p>
+                </div>
+
             </div>
-        })}
-    </footer>
+        </footer>
+    )
 }
