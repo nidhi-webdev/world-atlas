@@ -13,7 +13,7 @@ export const Footer = () => {
     }
 
     return (
-        <footer className="bg-gray-900 border-t border-gray-700 mt-auto">
+        <footer className="bg-gray-900 border-t border-gray-700 mt-20">
             <div className="max-w-6xl mx-auto px-10 py-12">
 
                 {/* Top Section */}
@@ -33,7 +33,7 @@ export const Footer = () => {
                             const { icon, title, details } = curData
                             return (
                                 <div key={index} className="flex items-start gap-3">
-                                    <span className="text-blue-400 text-2xl mt-1">
+                                    <span className="text-blue-400 text-2xl mt-1 cursor-pointer">
                                         {footerIcon[icon]}
                                     </span>
                                     <div>
