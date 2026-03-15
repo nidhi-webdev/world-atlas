@@ -5,11 +5,5 @@ const api = axios.create({
 })
 
 export const getCountryData = () => {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            api.get("/all?fields=name,population,region,capital,flags")
-                .then(resolve)
-                .catch(reject)
-        }, 5000)
-    })
+ return api.get("/all?fields=name,population,region,capital,flags")
 }

@@ -10,11 +10,14 @@ export const Country = () => {
     useEffect(() => {
         startTransition(async () => {
             const res = await getCountryData()
-            console.log("Resonse", res);
-            
+            console.log("Resonse", res.data);
+
         })
     }, [])
 
     if (isPending) return <Loader />
-    return <div></div>
+
+    return <div className="grid grid-cols-4">
+
+    </div>
 }
