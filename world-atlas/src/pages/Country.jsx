@@ -1,5 +1,6 @@
 import { useEffect, useTransition } from "react"
 import { getCountryData } from "../api/api"
+import { Loader } from "../components/ui/Loader"
 
 
 
