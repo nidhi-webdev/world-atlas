@@ -1,3 +1,7 @@
+import { FaLongArrowAltRight } from "react-icons/fa"
+
+
+
 export const CountryCard = ({ countryData }) => {
     const { capital, flags, name, population, region, } = countryData
 
@@ -7,5 +11,6 @@ export const CountryCard = ({ countryData }) => {
         <p> <span className="text-gray-500 mt-3">Population: </span>  {population} </p>
         <p> <span className="text-gray-500 mt-3">Region: </span>  {region} </p>
         <p> <span className="text-gray-500 mt-3"> Capital: </span> {capital}  </p>
+        <button className="border border-gray-600 mt-5"> Read More <FaLongArrowAltRight /></button>
     </div>
 }
