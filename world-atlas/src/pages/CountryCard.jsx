@@ -13,7 +13,7 @@ export const CountryCard = ({ countryData }) => {
         <p> <span className="text-gray-500 mt-3">Region: </span>  {region} </p>
         <p> <span className="text-gray-500 mt-3"> Capital: </span> {capital}  </p>
         <NavLink to="">
-            <button className="border border-gray-600 mt-5 px-4 py-2 rounded-2xl transition-all duration-300 shadow-lg shadow-blue-500/30 cursor-pointer"> Read More <FaLongArrowAltRight /></button>
+            <button className="flex items-center gap-3 border border-gray-600 mt-5 px-4 py-2 rounded-2xl transition-all duration-300 shadow-lg shadow-blue-500/30 cursor-pointer"> Read More <FaLongArrowAltRight /></button>
         </NavLink>
     </div>
 }
