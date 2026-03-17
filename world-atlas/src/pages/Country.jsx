@@ -2,6 +2,7 @@ import { useEffect, useState, useTransition } from "react"
 import { getCountryData } from "../api/api"
 import { Loader } from "../components/ui/Loader"
 import { CountryCard } from "./CountryCard"
+import { SearchFilter } from "../components/ui/SearchFilter"
 
 
 
