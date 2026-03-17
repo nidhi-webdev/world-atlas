@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"
+import { NavLink, useParams } from "react-router-dom"
 import { useEffect, useState, useTransition } from "react"
 import { Loader } from "../ui/Loader"
 import { getConInvData } from "../../api/api"
@@ -46,6 +46,10 @@ export const CountryDetails = () => {
                     </p>
                 </div>
             </div>
+            <NavLink to="/country">
+                <button className=""> Go Back </button>
+            </NavLink>
+
         </div>
     )
 }
