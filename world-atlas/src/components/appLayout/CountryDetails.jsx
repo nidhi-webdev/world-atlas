@@ -1,7 +1,23 @@
 import { useParams } from "react-router-dom"
+import { useEffect, useState, useTransition } from "react"
+
 
 export const CountryDetails = () => {
-  const params =   useParams()
-  console.log("param", params);
-  return <h1> HAllo {params.id} </h1>
+    const params = useParams()
+
+    const [isPending, startTransition] = useTransition()
+    const [countries, setCountries] = useState([])
+
+    useEffect(() => {
+        startTransition(async () => {
+            const res = await getCountryData(params.id)
+            setCountries(res.data)
+
+        })
+    }, [])
+
+    if (isPending) return <Loader />
+
+
+    return <h1> HAllo {params.id} </h1>
 }
