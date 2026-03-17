@@ -47,7 +47,7 @@ export const CountryDetails = () => {
                 </div>
             </div>
             <NavLink to="/country">
-                <button className=""> Go Back </button>
+                <button className="cursor-pointer border border-gray-800 px-4 py-2 rounded-xl"> Go Back </button>
             </NavLink>
 
         </div>
