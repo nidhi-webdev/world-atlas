@@ -12,6 +12,7 @@ export const Country = () => {
     const [search, setSearch] = useState()
     const [filter, setFilter] = useState("All")
 
+
     useEffect(() => {
         startTransition(async () => {
             const res = await getCountryData()
@@ -21,6 +22,17 @@ export const Country = () => {
     }, [])
 
     if (isPending) return <Loader />
+
+
+    const searchCountry = (country) => {
+        if (search) {
+          return  country.name.common.toLowerCase().includes(search.toLowerCase())
+        } 
+        return country
+
+    }
+
+    const filterCountries = countries.filter((country) => searchCountry(country))
 
     return <div className=" mt-10 px-[10%]">
         <SearchFilter
