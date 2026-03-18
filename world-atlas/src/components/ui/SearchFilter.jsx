@@ -1,9 +1,15 @@
 export const SearchFilter = ({ search, setSearch, filter, setFilter }) => {
 
     const handleSearch = (e) => {
+        e.preventDefault()
         setSearch(e.target.value)
-        console.log("Types Value", e.target.value);
 
+
+    }
+
+    const handleSearchChange = (e) => {
+        e.preventDefault()
+        setFilter(e.target.value)
     }
 
     return <div>
@@ -14,7 +20,7 @@ export const SearchFilter = ({ search, setSearch, filter, setFilter }) => {
             onChange={handleSearch} />
 
         <div>
-            <select>
+            <select value={filter} onChange={handleSearchChange}>
                 <option value="all" ></option>
                 <option value="Africa"> Africa </option>
                 <option value="Americas"> Americas  </option>
