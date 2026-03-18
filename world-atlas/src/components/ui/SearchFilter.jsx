@@ -12,22 +12,26 @@ export const SearchFilter = ({ search, setSearch, filter, setFilter }) => {
         setFilter(e.target.value)
     }
 
-    return <div>
+    return <div className="flex justify-between mb-10 items-center">
+
         <input
             type="text"
             value={search}
             placeholder="Search"
-            onChange={handleSearch} />
+            onChange={handleSearch}
+            className="border border-gray-600 px-4 py-2 rounded-2xl focus:outline-none" />
 
-        <div>
-            <select value={filter} onChange={handleSearchChange}>
-                <option value="all" ></option>
-                <option value="Africa"> Africa </option>
-                <option value="Americas"> Americas  </option>
-                <option value="Asia"> Asia </option>
-                <option value="Europe"> Europe </option>
-                <option value="Oceania"> Oceania </option>
-            </select>
-        </div>
-    </div>
+
+        <select value={filter} onChange={handleSearchChange}
+            className="border border-gray-600 px-4 py-2 rounded focus: outline-none" >
+
+        <option value="all" > All </option>
+        <option value="Africa"> Africa </option>
+        <option value="Americas"> Americas  </option>
+        <option value="Asia"> Asia </option>
+        <option value="Europe"> Europe </option>
+        <option value="Oceania"> Oceania </option>
+    </select>
+    </div >
+
 }
