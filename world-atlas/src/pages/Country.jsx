@@ -42,7 +42,7 @@ export const Country = () => {
             setFilter={setFilter} />
 
         <div className="grid grid-cols-4 gap-6">
-            {countries.map((countryData, index) => {
+            {filterCountries.map((countryData, index) => {
                 return <CountryCard countryData={countryData} key={index} />
             })}
         </div>

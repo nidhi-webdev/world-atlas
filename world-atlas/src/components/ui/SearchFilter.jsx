@@ -16,14 +16,14 @@ export const SearchFilter = ({ search, setSearch, filter, setFilter }) => {
 
         <input
             type="text"
-            value={search}
+            value={search || ""}
             placeholder="Search"
             onChange={handleSearch}
             className="border border-gray-600 px-4 py-2 rounded-2xl focus:outline-none" />
 
 
-        <select value={filter} onChange={handleSearchChange}
-            className="border border-gray-600 px-4 py-2 rounded focus: outline-none" >
+        <select value={filter || "all"} onChange={handleSearchChange}
+            className="border border-gray-600 px-4 py-2 rounded focus:outline-none" >
 
         <option value="all" > All </option>
         <option value="Africa"> Africa </option>
