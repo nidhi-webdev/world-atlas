@@ -9,9 +9,11 @@ import { SearchFilter } from "../components/ui/SearchFilter"
 export const Country = () => {
     const [isPending, startTransition] = useTransition()
     const [countries, setCountries] = useState([])
-    const [search, setSearch] = useState()
-    const [filter, setFilter] = useState("All")
+    const [search, setSearch] = useState("")
+    const [filter, setFilter] = useState("all")
 
+    // console.log(countries);
+    
 
     useEffect(() => {
         startTransition(async () => {
@@ -26,13 +28,17 @@ export const Country = () => {
 
     const searchCountry = (country) => {
         if (search) {
-          return  country.name.common.toLowerCase().includes(search.toLowerCase())
-        } 
-        return country
+            return country.name.common.toLowerCase().includes(search.toLowerCase())
+        }
+        return true;
 
     }
+    const filterRegion = (country) => {
+        if (filter === "all") return true;
+        return country.region === filter;
+    }
 
-    const filterCountries = countries.filter((country) => searchCountry(country))
+    const filterCountries = countries.filter((country) => searchCountry(country) && filterRegion(country))
 
     return <div className=" mt-10 px-[10%]">
         <SearchFilter
