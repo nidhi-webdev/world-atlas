@@ -3,6 +3,12 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 
 export const Headers = () => {
+
+    const handleButtonToggle = () => {
+        
+    }
+
+
     return <header>
         <div className="bg-gray-800 pt-8 pb-8 flex justify-between items-center">
             <div className="ml-[15%]">
