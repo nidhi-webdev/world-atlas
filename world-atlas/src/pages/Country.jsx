@@ -12,9 +12,6 @@ export const Country = () => {
     const [search, setSearch] = useState("")
     const [filter, setFilter] = useState("all")
 
-    // console.log(countries);
-    
-
     useEffect(() => {
         startTransition(async () => {
             const res = await getCountryData()
