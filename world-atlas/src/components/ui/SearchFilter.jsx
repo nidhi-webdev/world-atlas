@@ -13,7 +13,10 @@ export const SearchFilter = ({ search, setSearch, filter, setFilter, countries, 
     }
 
     const sortCountries = (value) => {
-     
+        const sortCountry = [...countries].sort((a, b) => {
+            return value === "asc"
+                ? a.name.common.localeCompare(b.name.common) : b.name.common.localeCompare(a.name.common)
+        })
     }
 
     return <div className="flex justify-between mb-10 items-center">
@@ -25,8 +28,8 @@ export const SearchFilter = ({ search, setSearch, filter, setFilter, countries, 
             onChange={handleSearch}
             className="border border-gray-600 px-4 py-2 rounded-2xl focus:outline-none" />
 
-        <button onClick={() => sortCountries("asc")} className="bg-gray-600 px-4 py-2 rounded"> Asc </button>
-        <button onClick={() => sortCountries("dsc")} className="bg-gray-600 px-4 py-2 rounded"> Desc </button>
+        <button onClick={() => sortCountries("asc")} className="bg-gray-600 px-4 py-2 rounded cursor-pointer"> Asc </button>
+        <button onClick={() => sortCountries("desc")} className="bg-gray-600 px-4 py-2 rounded cursor-pointer"> Desc </button>
 
 
         <select value={filter || "all"} onChange={handleSearchChange}
