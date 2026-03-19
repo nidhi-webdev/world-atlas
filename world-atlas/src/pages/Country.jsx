@@ -42,7 +42,9 @@ export const Country = () => {
             search={search}
             setSearch={setSearch}
             filter={filter}
-            setFilter={setFilter} />
+            setFilter={setFilter}
+            countries={countries}
+            setCountries={setCountries} />
 
         <div className="grid grid-cols-4 gap-6">
             {filterCountries.map((countryData, index) => {

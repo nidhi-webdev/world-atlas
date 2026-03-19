@@ -1,4 +1,4 @@
-export const SearchFilter = ({ search, setSearch, filter, setFilter }) => {
+export const SearchFilter = ({ search, setSearch, filter, setFilter, countries, setCountries }) => {
 
     const handleSearch = (e) => {
         e.preventDefault()
@@ -12,6 +12,10 @@ export const SearchFilter = ({ search, setSearch, filter, setFilter }) => {
         setFilter(e.target.value)
     }
 
+    const sortCountries = (value) => {
+     
+    }
+
     return <div className="flex justify-between mb-10 items-center">
 
         <input
@@ -22,7 +26,7 @@ export const SearchFilter = ({ search, setSearch, filter, setFilter }) => {
             className="border border-gray-600 px-4 py-2 rounded-2xl focus:outline-none" />
 
         <button onClick={() => sortCountries("asc")} className="bg-gray-600 px-4 py-2 rounded"> Asc </button>
-        <button onClick={() => sortCountries("dsc")} className="bg-gray-600 px-4 py-2 rounded"> Dsc </button>
+        <button onClick={() => sortCountries("dsc")} className="bg-gray-600 px-4 py-2 rounded"> Desc </button>
 
 
         <select value={filter || "all"} onChange={handleSearchChange}
