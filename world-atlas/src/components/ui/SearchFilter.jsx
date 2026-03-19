@@ -17,6 +17,7 @@ export const SearchFilter = ({ search, setSearch, filter, setFilter, countries, 
             return value === "asc"
                 ? a.name.common.localeCompare(b.name.common) : b.name.common.localeCompare(a.name.common)
         })
+        setCountries(sortCountry)
     }
 
     return <div className="flex justify-between mb-10 items-center">
