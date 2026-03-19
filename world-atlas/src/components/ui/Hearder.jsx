@@ -1,4 +1,6 @@
 import { NavLink } from "react-router-dom"
+import { GiHamburgerMenu } from "react-icons/gi";
+
 
 export const Headers = () => {
     return <header>
@@ -17,6 +19,12 @@ export const Headers = () => {
                     <li className="hover:text-amber-700"> <NavLink to="/contact"> Contact </NavLink> </li>
                 </ul>
             </nav>
+
+            <div>
+                <button onClick={handleButtonToggle}> 
+                    <GiHamburgerMenu />
+                </button>
+            </div>
         </div>
     </header>
 }
