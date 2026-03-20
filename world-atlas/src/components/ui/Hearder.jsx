@@ -4,10 +4,10 @@ import { useState } from "react";
 
 
 export const Headers = () => {
-    const [show, setShow] = useState()
+    const [show, setShow] = useState(false)
 
     const handleButtonToggle = () => {
-
+        setShow(!show)
     }
 
 
