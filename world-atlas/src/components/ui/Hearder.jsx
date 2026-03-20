@@ -19,7 +19,7 @@ export const Headers = () => {
                 </NavLink>
             </div>
 
-            <nav className="mr-[15%]">
+            <nav className={`mr-[15%] ${show ? "menuMobile" : "menuWeb"} `}>
                 <ul className="flex gap-6">
                     <li className="hover:text-amber-700"> <NavLink to="/"> Home </NavLink> </li>
                     <li className="hover:text-amber-700"> <NavLink to="/about"> About </NavLink> </li>
