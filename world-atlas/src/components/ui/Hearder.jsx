@@ -19,8 +19,8 @@ export const Headers = () => {
                 </NavLink>
             </div>
 
-            <nav className={`mr-[15%] ${show ? "menuMobile" : "menuWeb"} `}>
-                <ul className="flex gap-6">
+            <nav className={`mr-[15%] md:block ${show ? "absolute top-24 left-0 w-full bg-gray-800 flex py-4 z-50" : "hidden"} `}>
+                <ul className="flex flex-col md:flex-row items-center gap-6">
                     <li className="hover:text-amber-700"> <NavLink to="/"> Home </NavLink> </li>
                     <li className="hover:text-amber-700"> <NavLink to="/about"> About </NavLink> </li>
                     <li className="hover:text-amber-700"> <NavLink to="/country"> Country </NavLink> </li>
@@ -28,7 +28,7 @@ export const Headers = () => {
                 </ul>
             </nav>
 
-            <div>
+            <div className="md:hidden mr-[15%] text-2xl">
                 <button onClick={handleButtonToggle}>
                     <GiHamburgerMenu />
                 </button>
